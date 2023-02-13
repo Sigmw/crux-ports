@@ -2,6 +2,7 @@ d:pfetch
 d:polybar
 d:ncspot
 d:maim
+d:xclip
 d:slop
 f:4da6787924a7b9a2c44d87e4d3168adb:pfetch/.footprint
 f:c782f97ab945b1524d15bb6b51433691:pfetch/.md5sum
@@ -12,5 +13,12 @@ f:45f47f4f49d63b2a3179ca2a35a09acb:polybar/Pkgfile
 f:6804d671c876bac9bc6a1ad7081e42a7:ncspot/.footprint
 f:855750903e68c34a4dedd67646878edd:ncspot/.md5sum
 f:0ac22c4c48709e286ab0ed55a1e89b07:ncspot/Pkgfile
-f:83489972b97cb66792099e67c22c0b06:maim/Pkgfile
-f:80badc674c095676e3e7aaa8cf7d78e8:slop/Pkgfile
+f:5c0114f94e8de44ca67aae8c6e97c8f4:maim/.footprint
+f:96cd8c40e09879f7946933b156ed5c63:maim/.md5sum
+f:44a9541d157435cc1ed11bac97489dc5:maim/Pkgfile
+f:cd2591579f16fd9ca4eaf21a3a2af240:xclip/.footprint
+f:e2e297ae120504bf2ccf876f3f7733ff:xclip/.md5sum
+f:a73c8e7b9fb700ac1afec40ab651d81a:xclip/Pkgfile
+f:24c9021cc393d601f0e42bf468619a83:slop/.footprint
+f:e03006796ef460a99ad3a84ec50c3f1c:slop/.md5sum
+f:4a90d95a36670ca3e4016109403cec8c:slop/Pkgfile

@@ -10,7 +10,8 @@ source=(https://github.com/naelstrof/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
-	cmake -DCMAKE_INSTALL_PREFIX="/usr" ./
+	cmake -DCMAKE_INSTALL_PREFIX="/usr" ./ \
+	-Wno-dev
 	make
 	make DESTDIR=$PKG install
 }

@@ -1,0 +1,7 @@
+#
+# /etc/ports/sigma.git Lucas Mazuco's port collection
+#
+
+URL=https://github.com/sigmw/crux-ports.git
+NAME=sigma
+BRANCH=main

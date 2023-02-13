@@ -1,0 +1,8 @@
+#
+# /etc/ports/sigma.httpup Lucas Mazuco's port collection
+#
+
+ROOT_DIR=/usr/ports/sigma
+URL=https://raw.githubusercontent.com/sigmw/crux-ports/main/
+
+# End of file

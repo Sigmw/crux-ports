@@ -1,0 +1,12 @@
+# Description: A pretty system information tool written in POSIX sh.
+# URL: https://github.com/dylanaraps/pfetch
+# Maintainer: Lucas Mazuco, sigmw at protonmail dot com
+
+name=pfetch
+version=0.6.0
+release=1
+source=(https://github.com/dylanaraps/pfetch/archive/$version/$name-$version.tar.gz)
+
+build() {
+	install -Dt $PKG/usr/bin $name-$version/pfetch
+}

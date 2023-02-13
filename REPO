@@ -1,4 +1,8 @@
+d:pfetch
 d:polybar
 d:ncspot
+f:4da6787924a7b9a2c44d87e4d3168adb:pfetch/.footprint
+f:c782f97ab945b1524d15bb6b51433691:pfetch/.md5sum
+f:6a0cbe295ea5bd286174dff324e6d4dc:pfetch/Pkgfile
 f:21446f8d89f32bfb2963d5cb517d26a8:polybar/Pkgfile
 f:58aad08b8419f8aeff14657550e66f7d:ncspot/Pkgfile

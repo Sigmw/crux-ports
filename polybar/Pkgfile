@@ -1,0 +1,25 @@
+# Description: A fast and easy-to-use status bar
+# URL: https://github.com/jaagr/polybar
+# Maintainer: Lucas Mazuco, sigmw at protonmail dot com
+# Depends on: pkg-config libuv cairo libxcb python3 xcb-proto xcb-util-image xcb-util-cursor xcb-util-xrm python3-sphinx python3-packaging
+
+name=polybar
+version=3.6.3
+release=1
+source=(https://github.com/jaagr/polybar/archive/${version}/polybar-${version}.tar.gz)
+
+build() {
+	cd $name-$version
+
+	mkdir -p "$SRC/$name-$version/build"
+	cd "$SRC/$name-$version/build" || exit 1
+
+	# Git submodules
+	git clone https://github.com/polybar/xpp/ "$SRC/$name-$version/lib/xpp"
+	git clone https://github.com/polybar/i3ipcpp "$SRC/$name-$version/lib/i3ipcpp"
+
+        cmake -DCMAKE_INSTALL_PREFIX=/usr ..
+        cmake --build . --config Release -- -j ${JOBS}
+
+        cmake --build "$SRC/$name-$version/build" --target install -- DESTDIR="${PKG}"
+}

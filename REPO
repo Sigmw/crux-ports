@@ -4,5 +4,9 @@ d:ncspot
 f:4da6787924a7b9a2c44d87e4d3168adb:pfetch/.footprint
 f:c782f97ab945b1524d15bb6b51433691:pfetch/.md5sum
 f:6a0cbe295ea5bd286174dff324e6d4dc:pfetch/Pkgfile
-f:21446f8d89f32bfb2963d5cb517d26a8:polybar/Pkgfile
-f:58aad08b8419f8aeff14657550e66f7d:ncspot/Pkgfile
+f:6a3d1956a10d2a62b4bc3144e9cd8770:polybar/.footprint
+f:cc2b847bb46f81fa35b9abaf7868a7a8:polybar/.md5sum
+f:45f47f4f49d63b2a3179ca2a35a09acb:polybar/Pkgfile
+f:6804d671c876bac9bc6a1ad7081e42a7:ncspot/.footprint
+f:855750903e68c34a4dedd67646878edd:ncspot/.md5sum
+f:0ac22c4c48709e286ab0ed55a1e89b07:ncspot/Pkgfile

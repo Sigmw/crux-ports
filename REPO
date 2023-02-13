@@ -2,6 +2,7 @@ d:pfetch
 d:polybar
 d:ncspot
 d:maim
+d:spotify
 d:xclip
 d:slop
 f:4da6787924a7b9a2c44d87e4d3168adb:pfetch/.footprint
@@ -16,6 +17,8 @@ f:0ac22c4c48709e286ab0ed55a1e89b07:ncspot/Pkgfile
 f:5c0114f94e8de44ca67aae8c6e97c8f4:maim/.footprint
 f:96cd8c40e09879f7946933b156ed5c63:maim/.md5sum
 f:44a9541d157435cc1ed11bac97489dc5:maim/Pkgfile
+f:6b89b5dfd3004810b13b4494a849d0c2:spotify/.footprint
+f:8823c1aa414edea4c1e051cfac255212:spotify/Pkgfile
 f:cd2591579f16fd9ca4eaf21a3a2af240:xclip/.footprint
 f:e2e297ae120504bf2ccf876f3f7733ff:xclip/.md5sum
 f:a73c8e7b9fb700ac1afec40ab651d81a:xclip/Pkgfile

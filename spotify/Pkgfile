@@ -1,0 +1,73 @@
+# Description: A propietary music streaming service.
+# URL: http://www.spotify.com
+# Maintainer: Lucas Mazuco, sigmw at protonmail dot com
+# Depends on: nss gconf glib ffmpeg-compat pulseaudio cups libxkbcommon
+# Optional: libnotify rtmpdump
+
+name=spotify
+version=1.1.84.716
+_commit=gc5f8b819
+_libcurl_ver=4.8.0
+release=1
+source=(http://repository.spotify.com/pool/non-free/s/spotify-client/spotify-client_${version}.${_commit}-2_amd64.deb)
+
+build() {
+    ar -x $SRC/${name}-client_${version}.${_commit}-2_amd64.deb
+    ## I think that /opt is a good place for binary-only stuff.
+    install -d $PKG/opt/spotify
+
+    ## Fix symlink for debian's libcurl-gnutls
+    install -d $PKG/opt/spotify/usr/lib
+    ln -s /usr/lib/libcurl.so.${_libcurl_ver} $PKG/opt/spotify/usr/lib/libcurl-gnutls.so.4
+
+    ## Generate the directory structure in $PKG
+    install -d $PKG/usr/{bin,lib}
+
+    tar -xf $SRC/data.tar.gz -C $PKG/opt/spotify
+    ln -sf /opt/spotify/usr/bin/spotify $PKG/usr/bin/spotify
+    ln -sf /opt/spotify/usr/lib/libcurl-gnutls.so.4 $PKG/usr/lib/libcurl-gnutls.so.4
+
+    ## Add more links to make Spotify works with some DE.
+    ##
+    ## Icons (always to /usr).
+    local icon="spotify-linux"
+    local icon_path="/opt/spotify/usr/share/spotify/icons"
+    local pkg_icons_destdir="$PKG/usr/share/icons/hicolor"
+    for ico_sz in {128,16,22,24,256,32,48,512,64}; do
+        local dest_dir="$pkg_icons_destdir/${ico_sz}x${ico_sz}/apps"
+        if [ ! -d $dest_dir ]; then
+            install -d $dest_dir || exit 1
+        fi
+
+        ## In the .desktop file, the icon has spotify-client name on it.
+        ln -sf $icon_path/$icon-$ico_sz.png \
+            $dest_dir/spotify-client.png
+    done
+
+    ## Icons (optionally at /usr/local)
+    if [ -d $usr_local ]; then
+        local icon="spotify-linux"
+        local icon_path="/opt/spotify/usr/share/spotify/icons"
+        local pkg_local_icons_dest_dir="$PKG/usr/local/share/icons/hicolor"
+        local usr_local="/usr/local"
+
+        for ico_sz in {128,16,22,24,256,32,48,512,64} ; do
+            ## Create the /usr/local in package directory.
+            install -d $pkg_local_icons_dest_dir/${ico_sz}x${ico_sz}/apps \
+                || exit 1
+            ln -sf $icon_path/$icon-$ico_sz.png \
+                $pkg_local_icons_dest_dir/${ico_sz}x${ico_sz}/apps/spotify-client.png
+        done
+    fi
+
+    ## Install desktop file.
+    local src_path="/opt/spotify/usr/share/spotify/spotify.desktop"
+    if [ -d /usr/share/applications ]; then
+        ln -sf $src_path /usr/share/applications/spotify.desktop
+    fi
+
+    if [ -d /usr/local/share/applications ]; then
+        ln -sf $src_path /usr/local/share/applications/spotify.desktop
+    fi
+}
+

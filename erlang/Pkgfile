@@ -21,7 +21,7 @@ build() {
 		--with-odbc=/usr \
 		--with-ssl=/usr \
 		--without-javac
-	make
+	make -j ${JOBS}
 	make DESTDIR=$PKG install
 }
 

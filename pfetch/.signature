@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/sigma.pub
+RWRypNSDgaWPIxaiqZRwQrJVIqbPIUr+veNLGRzf+xj8kAqpc5fR2Akf4Bh62GBT0LD95fylYqu2Y8/PQArVRQAYaiURznXPggQ=
+SHA256 (Pkgfile) = b460838ae24b373cc03a8002ff142ae0561e1ea986f574928e494762f49ae426
+SHA256 (.footprint) = 2446504c69f5e978dfe2e08389524e38bcfa0dd2a82a5b5f11faf904d9b098ed
+SHA256 (pfetch-0.6.0.tar.gz) = d1f611e61c1f8ae55bd14f8f6054d06fcb9a2d973095367c1626842db66b3182

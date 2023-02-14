@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/sigma.pub
+RWRypNSDgaWPI3yGCBHM/Nn/G9LHW95NkI5CGUoeEvgzmsSDpW++Lvhha8iNv5k6RottDr6qv8u8YXXWSDufWRUnNIs+5rEYBQM=
+SHA256 (Pkgfile) = 02ca332e9f510e03738a239fb2efaa686ad15e9c74661f138e3db18173b6621d
+SHA256 (.footprint) = 90144245a666857f1b9edd27e543a53bee180b115bb1a87a5e983faddb736454
+SHA256 (polybar-3.6.3.tar.gz) = 0387c1cb2704bf37ecac53dde957c7287c78176095f75a51c1a65e555c5b1e3c

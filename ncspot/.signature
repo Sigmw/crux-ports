@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/sigma.pub
+RWRypNSDgaWPIyR+lqvYs7y72NgjIuKCDC3bufGfUAzhrP6yCGfh42T9gm2oXmJauwa055G3hmgfnW3Um7pOt1YVZkjg/FXapQU=
+SHA256 (Pkgfile) = 1adc5f8491313d6d0cfd451d762fa450932008fb7b2a0bfd07c46366c428cd92
+SHA256 (.footprint) = 32f37cb3895fb7d70ea0ff4a43a3057b8a57a713a9d8040596d85da638278a01
+SHA256 (ncspot-0.12.0.tar.gz) = 9623bc4cf9be4340a7b4de809889a515553da82d3d6b98b13e0646c60c124a44

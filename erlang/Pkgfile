@@ -1,0 +1,27 @@
+# Description:	General-purpose concurrent functional programming language developed by Ericsson
+# URL: http://www.erlang.org/
+# Maintainer: Lucas Mazuco, sigmw at protonmail dot com
+# Depends on:	
+
+name=erlang
+version=25.2
+release=1
+source=(http://erlang.org/download/otp_src_${version}.tar.gz)
+
+build() {
+	cd otp_src_${version}
+
+	# only needed for code changes:
+	# ./otp_build autoconf
+
+	./configure \
+		--prefix=/usr \
+		--enable-threads \
+		--enable-smp-support \
+		--with-odbc=/usr \
+		--with-ssl=/usr \
+		--without-javac
+	make
+	make DESTDIR=$PKG install
+}
+

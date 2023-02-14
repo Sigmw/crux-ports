@@ -4,6 +4,7 @@ d:ncspot
 d:maim
 d:spotify
 d:xclip
+d:erlang
 d:slop
 f:7e3869755ce88d9ef6db1527b5ae6b45:pfetch/.signature
 f:4da6787924a7b9a2c44d87e4d3168adb:pfetch/.footprint
@@ -24,6 +25,10 @@ f:c200cc007f9833c359df48e188fc43b4:xclip/.signature
 f:cd2591579f16fd9ca4eaf21a3a2af240:xclip/.footprint
 f:a73c8e7b9fb700ac1afec40ab651d81a:xclip/Pkgfile
 f:ca18247681bbf654abd320bea575ad88:sigma.pub
+f:8b81b1df6aa23cf7e8f678c09388b320:erlang/.signature
+f:65543c8a49b80500377ed59868e8a5b5:erlang/.footprint
+f:1de12a1ac4e89169a18d20de17691ca4:erlang/.md5sum
+f:aa2773fc66c1ed11600c043370a4c930:erlang/Pkgfile
 f:4568594a3599f19e384e1f6048c7b2ad:slop/.signature
 f:24c9021cc393d601f0e42bf468619a83:slop/.footprint
 f:4a90d95a36670ca3e4016109403cec8c:slop/Pkgfile

@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/sigma.pub
+RWRypNSDgaWPIzcCSaVfl2/IWMVD1BJKpSe1A7fyw4CiknNHblaPND1namtqrY2SBvGf3trr0LuFIuSSvF95iICsK7QGNJvA5Q4=
+SHA256 (Pkgfile) = a64fb7240591ba4663c79a268cfc903d1f62f833dc329d3766fda1101880a22f
+SHA256 (.footprint) = 972ec60e0992ead2199060e7fe9d067811280422050165ed851a2ec5670f98e7
+SHA256 (otp_src_25.2.tar.gz) = 0df1243afde953647df95785f8e75541fd0ea8ac70c0f639c977513be1761f63
